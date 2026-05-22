@@ -66,3 +66,49 @@ body {
   background-color: aquamarine;
   border: 4px solid brown;
 }
+
+header {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.img-container img {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+}
+
+.container {
+  display: flex;
+  flex: 0 0 auto;
+  background-color: chartreuse;
+  padding: 10px;
+  /* justify-content: center; */
+  margin-left: auto;
+}
+
+.box {
+  background-color: aqua;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.side-box {
+  flex: 0 0 auto;
+}
+
+.middle-box {
+  flex: 0 0 auto;
+  background-color: blue;
+}
+
+.credentials {
+  flex: 0 0 auto;
+  margin-left: auto;
+  background-color: cadetblue;
+  padding: 10px;
+}
