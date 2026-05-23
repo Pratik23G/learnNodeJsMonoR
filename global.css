@@ -112,3 +112,63 @@ header {
   background-color: cadetblue;
   padding: 10px;
 }
+
+.boxes {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #c3c3c3;
+  flex-direction: column-reverse;
+}
+
+.boxes .swish {
+  background-color: red;
+  text-align: center;
+}
+
+.boxes .swish-2 {
+  background-color: blue;
+  text-align: center;
+}
+
+.boxes .swish-3 {
+  background-color: burlywood;
+  text-align: center;
+}
+
+.spot-l {
+  width: 100px;
+  height: 300px;
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column-reverse;
+
+  gap: 10px;
+}
+
+.red {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  background-color: red;
+  /* flex-direction: column-reverse; */
+}
+
+.yellow {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  background-color: yellow;
+  /* flex-direction: column-reverse; */
+}
+
+.green {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: green;
+  /* flex-direction: column-reverse; */
+}
