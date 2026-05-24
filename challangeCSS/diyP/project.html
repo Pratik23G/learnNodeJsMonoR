@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Mood Board</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: system-ui, sans-serif;
+        background: #fdf6f0;
+        color: #333;
+        min-height: 100vh;
+      }
+
+      /* === 1. HEADER — center the h1 horizontally AND vertically === */
+      .header {
+        display: flex;
+        /* TODO: which property centers along the main axis (horizontal)? */
+        justify-content: center;
+        /* TODO: which property centers along the cross axis (vertical)? */
+        align-items: center;
+        height: 120px;
+        background: #ff8fab;
+        color: white;
+      }
+      .header h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+      }
+
+      /* === 2. NAV — spread the 4 links evenly across the bar === */
+      .nav {
+        display: flex;
+        /* TODO: try space-between, space-around, or space-evenly — pick your fave */
+        justify-content: space-evenly;
+        padding: 16px 32px;
+        background: #fb6f92;
+      }
+      .nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* === 3. GALLERY — let cards wrap to new rows, centered === */
+      .gallery {
+        display: flex;
+        /* TODO: allow wrapping when there's not enough room */
+        flex-wrap: wrap;
+        /* TODO: center the cards along the main axis */
+        justify-content: center;
+        gap: 20px;
+        padding: 40px;
+      }
+
+      /* === 4. CARD — center the emoji inside each card === */
+      .card {
+        width: 200px;
+        height: 200px;
+        border-radius: 12px;
+        display: flex;
+        /* TODO: center horizontally */
+        justify-content: center;
+        /* TODO: center vertically */
+        align-items: center;
+        font-size: 4rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+      .card:hover {
+        transform: translateY(-6px);
+      }
+
+      .card:nth-child(1) {
+        background: #ffd6a5;
+      }
+      .card:nth-child(2) {
+        background: #caffbf;
+      }
+      .card:nth-child(3) {
+        background: #9bf6ff;
+      }
+      .card:nth-child(4) {
+        background: #bdb2ff;
+      }
+      .card:nth-child(5) {
+        background: #ffc6ff;
+      }
+      .card:nth-child(6) {
+        background: #fdffb6;
+      }
+
+      /* === 5. FOOTER — push the text all the way to the right === */
+      .footer {
+        display: flex;
+        /* TODO: which value pushes content to the end of the main axis? */
+        justify-content: flex-end;
+        padding: 20px 32px;
+        background: #333;
+        color: white;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>my vibes ✨</h1>
+    </header>
+
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <section class="gallery">
+      <div class="card">🌸</div>
+      <div class="card">🌊</div>
+      <div class="card">🍃</div>
+      <div class="card">☕</div>
+      <div class="card">📚</div>
+      <div class="card">🎧</div>
+    </section>
+
+    <footer class="footer">
+      <p>made with flexbox 💪</p>
+    </footer>
+  </body>
+</html>
